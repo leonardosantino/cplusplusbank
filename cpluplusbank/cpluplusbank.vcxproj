@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0b3df30d-a515-46b4-9dd3-b5a800fb50ef}</ProjectGuid>
-    <RootNamespace>learningc</RootNamespace>
+    <ProjectGuid>{a6c1d3c1-6240-4bd7-86c6-8cd02d284762}</ProjectGuid>
+    <RootNamespace>cpluplusbank</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>learningcplusplus</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,12 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="advination.cpp" />
-    <ClCompile Include="double.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Account.cpp" />
+    <ClCompile Include="cpluplusbank.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="header.h" />
+    <ClInclude Include="Account.hpp" />
+    <ClInclude Include="cplusplusbank.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
