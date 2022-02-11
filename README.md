@@ -15,12 +15,13 @@ private:
 	std::string account_number;
 	std::string agency_number;
 	Holder holder;
-	float balance;
+	double balance;
 
 public:
 	Account(std::string account_number, std::string agency_number, Holder holder);
-	void withdraw(float value);
-	void depoisit(float value);
+	void withdraw(double value);
+	void depoisit(double value);
+	void transfer(double value, Account& account);
 	float getBalance();
 	Holder getHolder();
 };
@@ -39,18 +40,18 @@ Account::Account(std::string account_number, std::string agency_number, Holder h
 	account_id++;
 }
 
-void Account::withdraw(float value)
+void Account::withdraw(double value)
 {
 	if (value > this->balance) {
 		
-		cout << "Insufiente balance";
+		cout << "Insuffient balance";
 		return;
 	}
 
 	this->balance -= value;
 }
 
-void Account::depoisit(float value)
+void Account::depoisit(double value)
 {
 	if (value < 0) {
 
@@ -64,6 +65,24 @@ void Account::depoisit(float value)
 float Account::getBalance()
 {
 	return this->balance;
+}
+
+void Account::transfer(double value, Account& account)
+{
+	if (value < 0) {
+
+		cout << "Type a number grather than zero";
+		return;
+	}
+
+	else if (value > this->balance) {
+
+		cout << "Insuffient balance";
+		return;
+	}
+
+	this->balance -= value;
+	account.balance += value;
 }
 
 Holder Account::getHolder()
