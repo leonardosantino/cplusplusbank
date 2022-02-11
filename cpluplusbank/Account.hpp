@@ -1,22 +1,23 @@
 #pragma once
 #include <string>
+#include "Holder.hpp"
 
 class Account
 {
 public:
 	static int account_id;
+
 private:
 	std::string account_number;
 	std::string agency_number;
-	std::string account_owner;
-	std::string cpf;
-	float balance;
+	Holder holder;
+	double balance;
 
 public:
-	Account(std::string account_number, std::string agency_number, std::string account_owner, std::string cpf);
-	void withdraw(float value);
-	void depoisit(float value);
+	Account(std::string account_number, std::string agency_number, Holder holder);
+	void withdraw(double value);
+	void depoisit(double value);
+	void transfer(double value, Account& account);
 	float getBalance();
-	void setAccountOwner(std::string name);
-	std::string getAccoutOwner();
+	Holder getHolder();
 };
