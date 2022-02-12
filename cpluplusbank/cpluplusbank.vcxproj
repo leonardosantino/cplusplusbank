@@ -141,11 +141,15 @@
   <ItemGroup>
     <ClCompile Include="Account.cpp" />
     <ClCompile Include="cpluplusbank.cpp" />
+    <ClCompile Include="Employee.cpp" />
     <ClCompile Include="Holder.cpp" />
+    <ClCompile Include="Manager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Account.hpp" />
+    <ClInclude Include="Employee.hpp" />
     <ClInclude Include="Holder.hpp" />
+    <ClInclude Include="Manager.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

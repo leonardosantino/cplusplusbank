@@ -32,7 +32,7 @@ void Account::depoisit(double value)
 	this->balance += value;
 }
 
-float Account::getBalance()
+double Account::getBalance()
 {
 	return this->balance;
 }

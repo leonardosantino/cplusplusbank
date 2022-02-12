@@ -1,5 +1,4 @@
 #pragma once
-#include <string>
 #include "Holder.hpp"
 
 class Account
@@ -18,6 +17,6 @@ public:
 	void withdraw(double value);
 	void depoisit(double value);
 	void transfer(double value, Account& account);
-	float getBalance();
+	double getBalance();
 	Holder getHolder();
 };
