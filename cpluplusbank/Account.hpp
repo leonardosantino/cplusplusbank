@@ -6,17 +6,19 @@ class Account
 public:
 	static int account_id;
 
-private:
+protected:
 	std::string account_number;
 	std::string agency_number;
 	Holder holder;
 	double balance;
 
+
 public:
 	Account(std::string account_number, std::string agency_number, Holder holder);
-	void withdraw(double value);
+	virtual void withdraw(double value);
 	void depoisit(double value);
 	void transfer(double value, Account& account);
 	double getBalance();
 	Holder getHolder();
+
 };

@@ -144,12 +144,14 @@
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="Holder.cpp" />
     <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="SavingAccount.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Account.hpp" />
     <ClInclude Include="Employee.hpp" />
     <ClInclude Include="Holder.hpp" />
     <ClInclude Include="Manager.hpp" />
+    <ClInclude Include="SavingAccount.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
